@@ -8,7 +8,7 @@ import { SourceTitle } from "@/constants"
 import TypingEffect from "../TypingEffect"
 import { useSelector } from "react-redux"
 const openai = new OpenAI({
-    apiKey: '',
+    apiKey: import.meta.env.VITE_OPENAI_KEY,
     dangerouslyAllowBrowser: true
 });
 const PinsModal = ({ id, isVisiblePins }) => {
